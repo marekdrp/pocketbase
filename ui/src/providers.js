@@ -1,6 +1,7 @@
 import AppleOptions from "@/components/collections/providers/AppleOptions.svelte";
 import LarkOptions from "@/components/collections/providers/LarkOptions.svelte";
 import MicrosoftOptions from "@/components/collections/providers/MicrosoftOptions.svelte";
+import NextcloudOptions from "@/components/collections/providers/NextcloudOptions.svelte";
 import OIDCOptions from "@/components/collections/providers/OIDCOptions.svelte";
 import SelfHostedOptions from "@/components/collections/providers/SelfHostedOptions.svelte";
 
@@ -165,6 +166,13 @@ export default [
         title: "mailcow",
         logo: "mailcow.svg",
         optionsComponent: SelfHostedOptions,
+        optionsComponentProps: { required: true },
+    },
+    {
+        key: "nextcloud",
+        title: "Nextcloud",
+        logo: "nextcloud.svg",
+        optionsComponent: NextcloudOptions,
         optionsComponentProps: { required: true },
     },
     {
